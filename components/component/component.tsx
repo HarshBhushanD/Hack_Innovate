@@ -7,7 +7,7 @@ import Countdown from "./CountDown";
 import PopUp from "./Popup";
 import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
-import ProblemSection from "./statements";
+import ProblemSection from "./statements.jsx";
 import React from "react";
 import HomePage from "./Home/home";
 import { Timeline } from "./Timeline/Timeline";

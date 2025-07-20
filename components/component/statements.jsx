@@ -1,4 +1,4 @@
-/// <reference types="@react-three/fiber" />
+// This file is now JavaScript (JSX) to avoid r3f JSX type errors in Next.js
 import React, { useState, useRef, useEffect } from "react";
 import { FAQsAPI } from "../../lib/Statements";
 import { Canvas, useFrame } from "@react-three/fiber";
@@ -7,7 +7,7 @@ import gsap from "gsap";
 
 // Animated Three.js background: floating particles + glowing torus
 function FloatingParticles() {
-  const group = useRef<any>(null);
+  const group = useRef(null);
   // Generate random positions for 120 particles
   const particles = React.useMemo(() =>
     Array.from({ length: 120 }, () => [
@@ -19,9 +19,7 @@ function FloatingParticles() {
   );
   useFrame(({ clock }) => {
     if (group.current) {
-      // @ts-ignore
       group.current.rotation.y = Math.sin(clock.getElapsedTime() / 4) * 0.3;
-      // @ts-ignore
       group.current.rotation.x = Math.cos(clock.getElapsedTime() / 6) * 0.15;
     }
   });
@@ -38,12 +36,10 @@ function FloatingParticles() {
 }
 
 function GlowingTorus() {
-  const mesh = useRef();
+  const mesh = useRef(null);
   useFrame(({ clock }) => {
     if (mesh.current) {
-      // @ts-ignore
       mesh.current.rotation.x = clock.getElapsedTime() * 0.07;
-      // @ts-ignore
       mesh.current.rotation.y = clock.getElapsedTime() * 0.13;
     }
   });
@@ -56,10 +52,10 @@ function GlowingTorus() {
 }
 
 export default function ProblemSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const modalQuestionRef = useRef<HTMLHeadingElement | null>(null);
-  const modalAnswerRef = useRef<HTMLDivElement | null>(null);
+  const [openIndex, setOpenIndex] = useState(null);
+  const cardRefs = useRef([]);
+  const modalQuestionRef = useRef(null);
+  const modalAnswerRef = useRef(null);
 
   // GSAP entrance animation for cards
   useEffect(() => {
@@ -132,7 +128,7 @@ export default function ProblemSection() {
             className="[perspective:1000px] h-full"
             onClick={() => setOpenIndex(idx)}
           >
-            <div className="relative w-full h-[220px] min-h-[110px] max-h-[110px] bg-gradient-to-br from-[#232526]/80 to-[#414345]/80 -lg shadow-xl flex items-center justify-center px-6 py-8 text-center text-lg font-semibold cursor-pointer border border-white/10 backdrop-blur-md transition-all duration-300 group overflow-hidden"
+            <div className="relative w-full h-[220px] min-h-[220px] max-h-[220px] bg-gradient-to-br from-[#232526]/80 to-[#414345]/80 rounded-lg shadow-xl flex items-center justify-center px-6 py-8 text-center text-lg font-semibold cursor-pointer border border-white/10 backdrop-blur-md transition-all duration-300 group overflow-hidden"
               style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)' }}
             >
               {/* Glassmorphism overlay */}
