@@ -128,7 +128,7 @@ export default function ProblemSection() {
             className="[perspective:1000px] h-full"
             onClick={() => setOpenIndex(idx)}
           >
-            <div className="relative w-full h-[220px] min-h-[220px] max-h-[220px] bg-gradient-to-br from-[#232526]/80 to-[#414345]/80 rounded-lg shadow-xl flex items-center justify-center px-6 py-8 text-center text-lg font-semibold cursor-pointer border border-white/10 backdrop-blur-md transition-all duration-300 group overflow-hidden"
+            <div className="relative w-full h-[110px] min-h-[110px] max-h-[110px] bg-gradient-to-br from-[#232526]/80 to-[#414345]/80 rounded-lg shadow-xl flex items-center justify-center px-6 py-8 text-center text-lg font-semibold cursor-pointer border border-white/10 backdrop-blur-md transition-all duration-300 group overflow-hidden"
               style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)' }}
             >
               {/* Glassmorphism overlay */}
