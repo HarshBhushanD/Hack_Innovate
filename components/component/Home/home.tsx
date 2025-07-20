@@ -1227,19 +1227,26 @@ const EpicHackathonHero = () => {
             </p>
             
             <div className="flex justify-center">
-              <button
-                className="group relative px-8 py-3 text-sm font-semibold rounded-xl transition-all duration-300 hover:scale-105 border border-gray-600 text-gray-400 hover:text-white hover:border-emerald-400 overflow-hidden"
-                style={{
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  background: 'rgba(0, 0, 0, 0.3)',
-                  backdropFilter: 'blur(10px)'
-                }}
+              <a
+                href="https://www.instagram.com/gfg_srmist_ncr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: 'inherit' }}
               >
-                <span className="relative z-10">Enter the Matrix</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </button>
+                <button
+                  className="group relative px-8 py-3 text-sm font-semibold rounded-xl transition-all duration-300 hover:scale-105 border border-gray-600 text-gray-400 hover:text-white hover:border-emerald-400 overflow-hidden"
+                  style={{
+                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    letterSpacing: '0.1em',
+                    textTransform: 'uppercase',
+                    background: 'rgba(0, 0, 0, 0.3)',
+                    backdropFilter: 'blur(10px)'
+                  }}
+                >
+                  <span className="relative z-10">Enter the Matrix</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
