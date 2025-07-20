@@ -1,41 +1,13 @@
-// import React from "react";
-// import {
-//   Accordion,
-//   AccordionItem,
-//   AccordionItemHeading,
-//   AccordionItemButton,
-//   AccordionItemPanel,
-// } from "react-accessible-accordion";
-// import { FAQsAPI } from "../../lib/Statements";
-
-// export default function ProblemSection() {
-//   const faqs = FAQsAPI.map((item, key) => {
-//     return (
-//       <AccordionItem key={key}>
-//         <AccordionItemHeading>
-//           <AccordionItemButton>{item.question}</AccordionItemButton>
-//         </AccordionItemHeading>
-//         <AccordionItemPanel>
-//           <p>{item.answer}</p>
-//         </AccordionItemPanel>
-//       </AccordionItem>
-//     );
-//   });
-//   return (
-//     <div className="mt-10 flex flex-col items-center md:max-h-screen md:overflow-y-scroll">
-//       <Accordion allowZeroExpanded>{faqs}</Accordion>
-//     </div>
-//   );
-// }
 import React, { useState, useRef, useEffect } from "react";
 import { FAQsAPI } from "../../lib/Statements";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import gsap from "gsap";
+import { JSX as R3FJSX } from '@react-three/fiber';
 
 // Animated Three.js background: floating particles + glowing torus
 function FloatingParticles() {
-  const group = useRef();
+  const group = useRef<any>(null);
   // Generate random positions for 120 particles
   const particles = React.useMemo(() =>
     Array.from({ length: 120 }, () => [
