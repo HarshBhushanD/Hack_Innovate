@@ -1220,7 +1220,7 @@ const EpicHackathonHero = () => {
                 letterSpacing: '0.02em'
               }}
             >
-              The future doesn't wait. Are you ready to <span className="text-emerald-400 font-semibold">transcend</span> the ordinary?
+              The future doesn&apos;t wait. Are you ready to <span className="text-emerald-400 font-semibold">transcend</span> the ordinary?
             </p>
             
             <div className="flex justify-center">
