@@ -739,19 +739,22 @@ const EpicHackathonHero = () => {
       // Animate particle streams
       if (particleStreams) {
         particleStreams.children.forEach((stream, streamIndex) => {
-          const positions = stream.geometry.attributes.position.array;
-          
-          for (let i = 0; i < positions.length; i += 3) {
-            positions[i + 1] += (streamIndex % 2 === 0 ? 0.5 : -0.5);
-            
-            // Reset particles that go too far
-            if (Math.abs(positions[i + 1]) > 150) {
-              positions[i + 1] = (streamIndex % 2 === 0 ? -150 : 150);
+          if (
+            (stream instanceof THREE.Mesh || stream instanceof THREE.Points) &&
+            stream.geometry &&
+            stream.geometry.attributes &&
+            stream.geometry.attributes.position
+          ) {
+            const positions = stream.geometry.attributes.position.array;
+            for (let i = 0; i < positions.length; i += 3) {
+              positions[i + 1] += (streamIndex % 2 === 0 ? 0.5 : -0.5);
+              if (Math.abs(positions[i + 1]) > 150) {
+                positions[i + 1] = (streamIndex % 2 === 0 ? -150 : 150);
+              }
             }
+            stream.geometry.attributes.position.needsUpdate = true;
+            stream.rotation.y = time * 0.3 + streamIndex;
           }
-          
-          stream.geometry.attributes.position.needsUpdate = true;
-          stream.rotation.y = time * 0.3 + streamIndex;
         });
       }
       
