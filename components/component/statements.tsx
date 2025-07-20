@@ -3,8 +3,7 @@ import { FAQsAPI } from "../../lib/Statements";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import gsap from "gsap";
-import { JSX as R3FJSX } from '@react-three/fiber';
-
+up
 // Animated Three.js background: floating particles + glowing torus
 function FloatingParticles() {
   const group = useRef<any>(null);
