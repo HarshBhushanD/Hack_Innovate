@@ -157,50 +157,65 @@ export const Timeline = () => {
 
       <div ref={indicesContainerref} className="indices">
         <div ref={indicesref} className="index" id="index-1">
-          <p>April 25th</p>
-          <p></p>
-          <p></p>
+          <p>10th September</p>
+          <p>Quiz Round</p>
+          <p>Initial screening of all registered participants.</p>
         </div>
         <div className="index" id="index-2">
-          <p>9:00 AM</p>
-          <p>April 25th</p>
-          <p> Registration </p>
+          <p>11th September</p>
+          <p>Problem Statement Release</p>
+          <p>Teams receive the official challenge to begin ideation.</p>
         </div>
         <div className="index" id="index-3">
-          <p>11:00 AM</p>
-          <p>April 25th</p>
-          <p>Inauguration & Tech Talk</p>
+          <p>12th September</p>
+          <p>09:00 AM – 10:30 AM</p>
+          <p>On-Site Registration</p>
         </div>
         <div className="index" id="index-4">
-          <p>12:00 PM</p>
-          <p>April 25th</p>
-          <p>Bug Finding Session 1</p>
+          <p>12th September</p>
+          <p>10:30 AM – 11:30 AM</p>
+          <p>Inauguration Ceremony</p>
         </div>
         <div className="index" id="index-5">
-          <p>1:00 PM</p>
-          <p>April 25th</p>
-          <p>Lunch Break</p>
+          <p>12th September</p>
+          <p>04:00 PM – 05:30 PM</p>
+          <p>Elimination Round – First checkpoint evaluation</p>
         </div>
         <div className="index" id="index-6">
-          <p>2:30 PM</p>
-          <p>April 25th</p>
-          <p>Bug Finding Session 2</p>
+          <p>12th September</p>
+          <p>07:30 PM – 09:00 PM</p>
+          <p>Mentorship Sessions – Guidance from experts and industry professionals</p>
         </div>
         <div className="index" id="index-7">
-          <p>3:00 PM</p>
-          <p>April 25th</p>
-          <p>Speaker Session</p>
+          <p>12th September</p>
+          <p>11:00 PM – 12:00 AM</p>
+          <p>Tech Quiz – A fun and competitive tech knowledge showdown</p>
+        </div>
+        <div className="index" id="index-8">
+          <p>13th September</p>
+          <p>02:00 AM – 04:00 AM</p>
+          <p>Mini Games & Midnight Refreshments</p>
+        </div>
+        <div className="index" id="index-9">
+          <p>13th September</p>
+          <p>04:00 AM – 08:00 AM</p>
+          <p>Final Sprint – Last stretch to polish and finalize the project</p>
+        </div>
+        <div className="index" id="index-10">
+          <p>13th September</p>
+          <p>10:00 AM – 12:00 PM</p>
+          <p>Final Presentations & Closing Ceremony</p>
         </div>
       </div>
 
-      <div className="card" id="card-1">
+      <div className="card" id="card-1" style={{ transform: 'translate(-50%, -50%) rotate(10deg)' }}>
         <div className="card-phase">
           <p>Phase #01</p>
         </div>
         <div className="card-title">
-          <p>From April 25th</p>
+          <p>10th September</p>
           <h1>
-            Event <span>Initiated</span>
+            Quiz <span>Round</span>
           </h1>
         </div>
         <div className="card-bg">
@@ -208,79 +223,146 @@ export const Timeline = () => {
         </div>
       </div>
 
-      <div className="card" id="card-2">
+      <div className="card" id="card-2" style={{ transform: 'translate(-50%, -50%) rotate(0deg)' }}>
         <div className="card-phase">
           <p>Phase #02</p>
         </div>
         <div className="card-title">
-          <p>From April 25th</p>
+          <p>11th September</p>
           <h1>
-            Event <span>Initiated</span>
+            Problem <span>Statement Release</span>
           </h1>
         </div>
-
         <div className="card-bg">
           <h1>02</h1>
         </div>
       </div>
 
-      <div className="card" id="card-3">
+      <div className="card" id="card-3" style={{ transform: 'translate(-50%, -50%) rotate(-10deg)' }}>
         <div className="card-phase">
           <p>Phase #03</p>
         </div>
         <div className="card-title">
-          <p>From April 25th</p>
+          <p>12th September</p>
           <h1>
-            Event <span>Initiated</span>
+            On-Site <span>Registration</span>
           </h1>
+          <p>09:00 AM – 10:30 AM</p>
         </div>
         <div className="card-bg">
           <h1>03</h1>
         </div>
       </div>
 
-      <div className="card" id="card-4">
+      <div className="card" id="card-4" style={{ transform: 'translate(-50%, -50%) rotate(10deg)' }}>
         <div className="card-phase">
           <p>Phase #04</p>
         </div>
         <div className="card-title">
-          <p>From April 25th</p>
+          <p>12th September</p>
           <h1>
-            Event <span>Initiated</span>
+            Inauguration <span>Ceremony</span>
           </h1>
+          <p>10:30 AM – 11:30 AM</p>
         </div>
         <div className="card-bg">
           <h1>04</h1>
         </div>
       </div>
 
-      <div className="card " id="card-5">
+      <div className="card" id="card-5" style={{ transform: 'translate(-50%, -50%) rotate(0deg)' }}>
         <div className="card-phase">
           <p>Phase #05</p>
         </div>
         <div className="card-title">
-          <p>From April 25th</p>
+          <p>12th September</p>
           <h1>
-            Event <span>Initiated</span>
+            Elimination <span>Round</span>
           </h1>
+          <p>04:00 PM – 05:30 PM</p>
         </div>
         <div className="card-bg">
           <h1>05</h1>
         </div>
       </div>
 
-      <div className="card .glow" id="card-6">
+      <div className="card" id="card-6" style={{ transform: 'translate(-50%, -50%) rotate(-10deg)' }}>
         <div className="card-phase">
           <p>Phase #06</p>
         </div>
         <div className="card-title">
-          <p>From April 25th</p>
+          <p>12th September</p>
           <h1>
-            Event <span>Initiated</span>
+            Mentorship <span>Sessions</span>
           </h1>
+          <p>07:30 PM – 09:00 PM</p>
         </div>
         <div className="card-bg">
           <h1>06</h1>
+        </div>
+      </div>
+
+      <div className="card" id="card-7" style={{ transform: 'translate(-50%, -50%) rotate(10deg)' }}>
+        <div className="card-phase">
+          <p>Phase #07</p>
+        </div>
+        <div className="card-title">
+          <p>12th September</p>
+          <h1>
+            Tech <span>Quiz</span>
+          </h1>
+          <p>11:00 PM – 12:00 AM</p>
+        </div>
+        <div className="card-bg">
+          <h1>07</h1>
+        </div>
+      </div>
+
+      <div className="card" id="card-8" style={{ transform: 'translate(-50%, -50%) rotate(0deg)' }}>
+        <div className="card-phase">
+          <p>Phase #08</p>
+        </div>
+        <div className="card-title">
+          <p>13th September</p>
+          <h1>
+            Mini Games & <span>Midnight Refreshments</span>
+          </h1>
+          <p>02:00 AM – 04:00 AM</p>
+        </div>
+        <div className="card-bg">
+          <h1>08</h1>
+        </div>
+      </div>
+
+      <div className="card" id="card-9" style={{ transform: 'translate(-50%, -50%) rotate(-10deg)' }}>
+        <div className="card-phase">
+          <p>Phase #09</p>
+        </div>
+        <div className="card-title">
+          <p>13th September</p>
+          <h1>
+            Final <span>Sprint</span>
+          </h1>
+          <p>04:00 AM – 08:00 AM</p>
+        </div>
+        <div className="card-bg">
+          <h1>09</h1>
+        </div>
+      </div>
+
+      <div className="card" id="card-10" style={{ transform: 'translate(-50%, -50%) rotate(10deg)' }}>
+        <div className="card-phase">
+          <p>Phase #10</p>
+        </div>
+        <div className="card-title">
+          <p>13th September</p>
+          <h1>
+            Final Presentations & <span>Closing Ceremony</span>
+          </h1>
+          <p>10:00 AM – 12:00 PM</p>
+        </div>
+        <div className="card-bg">
+          <h1>10</h1>
         </div>
       </div>
     </div>

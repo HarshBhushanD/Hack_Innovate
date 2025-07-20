@@ -9,8 +9,8 @@ import JudgeCard from "./judgeCard";
 import Perks from "@/components/component/Perks";
 import ProblemSection from "./statements";
 import React from "react";
-import { Timeline } from "./Timeline/Timeline";
 import HomePage from "./Home/home";
+import { Timeline } from "./Timeline/Timeline";
 export function Component() {
   // useEffect(() => {
   //   const script = document.createElement("script");
@@ -28,33 +28,8 @@ export function Component() {
         
 
       <div className="w-screen bg-gray-50/90 border-t border-b border-gray-200 dark:bg-gray-950 dark:border-gray-800 overflow-x-hidden">
-        <section className="bg-[url('/innovate_hero.webp')] bg-cover bg-center bg-no-repeat h-screen !w-screen grid gap-4 px-4 py-12 md:py-16 xl:px-6">
-          <div className="w-11/12 md:w-10/12 mx-auto flex flex-col justify-center space-y-4">
-            <div className="space-y-2 my-4">
-              <span className="text-lg md:text-2xl font-medium tracking-wide text-gray-600 dark:text-gray-400">
-                April 25-26, 2025
-              </span>
-              <h1 className="text-6xl text-wrap font-bold tracking-tighter xl:text-8xl/none text-white">
-                Vuln - VANGUARD
-              </h1>
-              <p className="max-w-[500px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Innovate with the best. Build the future of the web. Exciting
-                prizes await.
-              </p>
-            </div>
-{/* 
-            <div
-              className="apply-button"
-              data-hackathon-slug="hackinnovate"
-              data-button-theme="light"
-            style="height: 44px; width: 312px"
-            ></div> */}
-          </div>
-          <div className="max-[450px]:hidden font-bold text-4xl absolute bottom-0 h-[150px] w-10/12 mx-auto flex items-center justify-center text-white">
-            <Countdown />
-          </div>
-        </section>
-        <section className="py-12 md:py-16 xl:py-24 overflow-x-hidden">
+        
+        <section className="py-12 md:py-16 xl:py-24  bg-black overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-wrap max-[1300px]:justify-center justify-evenly xl:gap-10">
             <div className="max-[450px]:w-11/12 flex justify-center items-center space-y-4">
               <img src="/rotate.webp" alt="rotate" className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-60 animate-[spin_10s_linear_infinite]" loading="lazy" />
@@ -173,7 +148,7 @@ export function Component() {
             </div>
           </div>
         </section>
-        <section id="Prizes" className="py-12 md:py-16 xl:py-24 overflow-x-hidden">
+        <section id="Prizes" className="py-12 md:py-16 xl:py-24 bg-black overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col flex-wrap max-[1300px]:justify-center items-center justify-evenly xl:gap-10">
             <img src="/prize_rotate.webp" alt="rotate" className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-20 animate-[spin_100s_linear_infinite]" loading="lazy" />
             <div className="max-[450px]:w-11/12 flex text-center justify-center items-center space-y-4 z-10">
@@ -301,18 +276,8 @@ export function Component() {
             </div>
           </div >
         </section >
-        <section id="ProblemStatement" className="py-6 md:py-16 xl:py-24 overflow-x-hidden">
-          <div className="w-11/12 md:w-10/12 mx-auto grid gap-6 lg:grid-cols-2 xl:gap-10">
-            <div className="max-[1050px]:text-center flex flex-col justify-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Problem Statements
-              </h2>
-              <p className="max-w-[600px] mx-auto text-gray-500/70 dark:text-gray-400/70">
-                Here are the challenges you can tackle. Unleash your creativity
-                and skills to solve real problems.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center">
+        <section id="ProblemStatement" className="py-6 md:py-16 xl:py-24 bg-black overflow-x-hidden">
+          
               {/* <ul className="text-3xl gap-2 display flex flex-col list-none">
                 <li>Coming Soon!</li>
               </ul>
@@ -320,11 +285,11 @@ export function Component() {
                 To be released by 14th of April!
               </span> */}
               <ProblemSection />
-            </div>
-          </div>
+            
+         
         </section>
         <section className="bg-black relative h-full w-full">
-         <Timeline /> 
+        <Timeline/>
 
          
         </section>

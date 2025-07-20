@@ -19,15 +19,23 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
   }
 };
 
-export default function CountDown() {
-  const [targetDate, setTargetDate] = useState(null);
+interface CountDownProps {
+  targetDate?: number;
+}
+
+export default function CountDown({ targetDate }: CountDownProps) {
+  const [internalTargetDate, setInternalTargetDate] = useState<number | null>(null);
 
   useEffect(() => {
-    const d = new Date("April 25, 2025 09:00:00.000").getTime();
-    setTargetDate(d);
-  }, []);
+    if (targetDate) {
+      setInternalTargetDate(targetDate);
+    } else {
+      const d = new Date("April 25, 2025 09:00:00.000").getTime();
+      setInternalTargetDate(d);
+    }
+  }, [targetDate]);
 
-  if (!targetDate) return null; 
+  if (!internalTargetDate) return null;
 
-  return <Countdown date={targetDate} renderer={renderer} />;
+  return <Countdown date={internalTargetDate} renderer={renderer} />;
 }

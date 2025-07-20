@@ -163,6 +163,182 @@
     z-index: 1;
   }
   
+  #card-7 {
+    background-color: #000;
+    box-shadow: 0 0 10px 2px #ff6f61, inset 0 2px 2px #ff6f61;
+  }
+  #card-7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at 25% 0%,
+      #ff6f61 0%,
+      #000 50%,
+      #000 100%
+    );
+    opacity: 0.2;
+    z-index: 1;
+  }
+  #card-7 .card-phase {
+    background-color: #ff6f61;
+  }
+  #card-7 .card-title {
+    color: #ff6f61;
+  }
+  #card-7 .card-bg {
+    position: absolute;
+    z-index: -1;
+    font-size: 30em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 1px #ff6f61;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+  }
+  #index-7 p {
+    color: #ff6f61;
+  }
+
+  #card-8 {
+    background-color: #000;
+    box-shadow: 0 0 10px 2px #6a89cc, inset 0 2px 2px #6a89cc;
+  }
+  #card-8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at 25% 0%,
+      #6a89cc 0%,
+      #000 50%,
+      #000 100%
+    );
+    opacity: 0.2;
+    z-index: 1;
+  }
+  #card-8 .card-phase {
+    background-color: #6a89cc;
+  }
+  #card-8 .card-title {
+    color: #6a89cc;
+  }
+  #card-8 .card-bg {
+    position: absolute;
+    z-index: -1;
+    font-size: 30em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 1px #6a89cc;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+  }
+  #index-8 p {
+    color: #6a89cc;
+  }
+
+  #card-9 {
+    background-color: #000;
+    box-shadow: 0 0 10px 2px #f8c291, inset 0 2px 2px #f8c291;
+  }
+  #card-9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at 25% 0%,
+      #f8c291 0%,
+      #000 50%,
+      #000 100%
+    );
+    opacity: 0.2;
+    z-index: 1;
+  }
+  #card-9 .card-phase {
+    background-color: #f8c291;
+  }
+  #card-9 .card-title {
+    color: #f8c291;
+  }
+  #card-9 .card-bg {
+    position: absolute;
+    z-index: -1;
+    font-size: 30em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 1px #f8c291;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+  }
+  #index-9 p {
+    color: #f8c291;
+  }
+
+  #card-10 {
+    background-color: #000;
+    box-shadow: 0 0 10px 2px #38ada9, inset 0 2px 2px #38ada9;
+  }
+  #card-10::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at 25% 0%,
+      #38ada9 0%,
+      #000 50%,
+      #000 100%
+    );
+    opacity: 0.2;
+    z-index: 1;
+  }
+  #card-10 .card-phase {
+    background-color: #38ada9;
+  }
+  #card-10 .card-title {
+    color: #38ada9;
+  }
+  #card-10 .card-bg {
+    position: absolute;
+    z-index: -1;
+    font-size: 30em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: 1px #38ada9;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+  }
+  #index-10 p {
+    color: #38ada9;
+  }
+  
   .card-phase {
     position: absolute;
     top: 1em;
