@@ -326,7 +326,7 @@ export function Component() {
   //   return () => {
   //     document.body.removeChild(script);
   //   };
-  // }, []);
+  // }, [...]);
   return (
     <>
       <HomePage />
