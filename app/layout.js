@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
       </Head> */}
       <body className={inter.className}>
         <Header />
+        {/* Main page content is rendered below */}
         {children}
         {/* <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> */}
       </body>

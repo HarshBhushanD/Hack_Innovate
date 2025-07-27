@@ -10,73 +10,85 @@ import React from "react";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="top-4 fixed text-black dark:text-white w-screen z-50 lg:px-6 md:h-[80px] h-auto max-md:p-4 max-md:justify-center max-md:flex-col max-md:items-center lg:py-10 flex items-center">
-      <div className="flex items-center justify-between w-full">
-        <Link className="flex items-center justify-center" href="/">
-          <Image src="/logo.webp" alt="Innovate" width={80} height={80} />
-        </Link>
-        {!open ? (
-          <GiHamburgerMenu
-            onClick={() => {
-              setOpen(!open);
-            }}
-            className="text-white text-3xl md:hidden"
-          />
-        ) : (
-          <IoMdClose
-            onClick={() => {
-              setOpen(!open);
-            }}
-            className="text-white text-3xl md:hidden"
-          />
-        )}
-      </div>
-      {/* <nav
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 md:px-10 h-16 md:h-20"
+      style={{
+        background: 'linear-gradient(90deg, rgba(15,23,42,0.65) 60%, rgba(34,197,94,0.10) 100%)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
+        borderBottom: '1px solid rgba(255,255,255,0.08)',
+        boxShadow: '0 2px 16px 0 rgba(0,0,0,0.10)',
+      }}
+    >
+      <Link className="flex items-center gap-2" href="/">
+        <Image src="/logo.webp" alt="Innovate" width={44} height={44} className="rounded-lg shadow-md" />
+      </Link>
+      <nav
         className={
           open
-            ? "items-center md:ml-auto flex max-md:flex-col max-md:justify-center max-md:items-center max-md:h-auto md:flex gap-4 md:gap-6 "
-            : " md:ml-auto flex max-md:flex-col max-md:justify-center max-md:items-center max-md:h-auto gap-4 md:gap-6 max-md:hidden"
+            ? "flex flex-col absolute top-16 left-0 w-full bg-[rgba(15,23,42,0.97)] backdrop-blur-lg py-6 gap-4 md:static md:flex-row md:bg-transparent md:backdrop-blur-none md:py-0 md:gap-8 items-center transition-all duration-300"
+            : "hidden md:flex flex-row gap-8 items-center"
         }
       >
         <Link
-          className="text-lg p-2 font-bold hover:underline underline-offset-4"
-          href="/#About"
+          className="text-base md:text-lg font-medium px-2 py-1 rounded-md transition-all duration-200 hover:underline underline-offset-4 hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+          href="/about"
         >
           About
         </Link>
         <Link
-          className="text-lg p-2 font-bold hover:underline underline-offset-4"
-          href="/team"
-        >
-          Team
-        </Link>
-        <Link
-          className="text-lg p-2 font-bold hover:underline underline-offset-4"
-          href="/#ProblemStatement"
-        >
-          Statements
-        </Link>
-        <Link
-          className="text-lg p-2 font-bold hover:underline underline-offset-4"
+          className="text-base md:text-lg font-medium px-2 py-1 rounded-md transition-all duration-200 hover:underline underline-offset-4 hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           href="/#Prizes"
         >
           Prizes
         </Link>
         <Link
-          className="text-lg p-2 font-bold hover:underline underline-offset-4"
-          href="/#Sponsors"
+          className="text-base md:text-lg font-medium px-2 py-1 rounded-md transition-all duration-200 hover:underline underline-offset-4 hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+          href="/#Mentors"
         >
-          Sponsors
+          Mentor
         </Link>
         <Link
-          className="text-lg p-2 font-bold hover:underline underline-offset-4"
-          href="/communities"
+          className="text-base md:text-lg font-medium px-2 py-1 rounded-md transition-all duration-200 hover:underline underline-offset-4 hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+          href="/#ProblemStatement"
         >
-          Communities
+          Problem Statement
         </Link>
-      </nav> */}
-
-      <div></div>
+        <a
+          className="ml-0 md:ml-2 text-base md:text-lg font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 text-black shadow-md border border-emerald-200 hover:from-emerald-500 hover:to-cyan-500 hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+          href="https://www.srmist-ncr-gfg.club/Registration"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Register
+        </a>
+      </nav>
+      <button
+        className="md:hidden flex items-center justify-center ml-2 p-2 rounded-lg bg-black/10 hover:bg-black/20 transition-all duration-200"
+        onClick={() => setOpen(!open)}
+        aria-label={open ? 'Close menu' : 'Open menu'}
+        style={{ zIndex: 60 }}
+      >
+        {!open ? (
+          <GiHamburgerMenu className="text-white text-2xl" />
+        ) : (
+          <IoMdClose className="text-white text-2xl" />
+        )}
+      </button>
+      <style jsx>{`
+        header {
+          transition: background 0.3s, box-shadow 0.3s;
+        }
+        nav a, nav Link {
+          font-family: 'Inter', system-ui, sans-serif;
+        }
+        @media (max-width: 768px) {
+          nav {
+            border-radius: 0 0 18px 18px;
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+            margin-top: 0;
+          }
+        }
+      `}</style>
     </header>
   );
 }
