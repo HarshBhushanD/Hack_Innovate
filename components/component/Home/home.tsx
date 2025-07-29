@@ -899,11 +899,11 @@ const EpicHackathonHero = () => {
                   </li>
                   <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-3" style={{transitionDelay: '200ms'}}>
                     <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
-                    Hardware & IoT
+                    AI/ML
                   </li>
                   <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-4" style={{transitionDelay: '300ms'}}>
                     <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
-                    Network Solutions
+                    Security
                   </li>
                   <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-5" style={{transitionDelay: '400ms'}}>
                     <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
