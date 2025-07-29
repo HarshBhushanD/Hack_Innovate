@@ -24,7 +24,7 @@ const EpicHackathonAbout = () => {
       description: "Where brilliant minds converge to reshape reality",
       icon: "🧠",
       color: "#00ff87",
-      content: "Hack Innovate isn't just another hackathon – it's the battlefield where brilliant minds collide, ideas catch fire, and sleepless coders turn caffeine into working prototypes."
+              content: "Hack Innovate isn&apos;t just another hackathon – it&apos;s the battlefield where brilliant minds collide, ideas catch fire, and sleepless coders turn caffeine into working prototypes."
     },
     {
       title: "Neural Networks",
@@ -38,7 +38,7 @@ const EpicHackathonAbout = () => {
       description: "Where chaos transforms into revolutionary code",
       icon: "🌌",
       color: "#8b5cf6",
-      content: "Sleep is optional. Passion isn't. If you're ready to prove your mettle, outsmart the bugs, and build something that actually matters - this is your stage."
+              content: "Sleep is optional. Passion isn&apos;t. If you&apos;re ready to prove your mettle, outsmart the bugs, and build something that actually matters - this is your stage."
     },
     {
       title: "Reality Distortion",
@@ -57,7 +57,7 @@ const EpicHackathonAbout = () => {
     setTimeout(() => setTextAnimation(true), 500);
 
     return () => clearInterval(sectionInterval);
-  }, []);
+  }, [aboutSections.length]);
 
   const terminalCommands = [
     '🎯 Initializing Hack Innovate system...',
@@ -112,7 +112,7 @@ const EpicHackathonAbout = () => {
     return () => {
       clearTimeout(terminalInterval);
     };
-  }, []);
+  }, [terminalCommands]);
 
   useEffect(() => {
     if (!containerRef.current || !canvasRef.current) return;

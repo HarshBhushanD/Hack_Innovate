@@ -58,7 +58,7 @@ const EpicHackathonHero = () => {
     setTimeout(() => setTextAnimation(true), 500);
 
     return () => clearInterval(featureInterval);
-  }, []);
+  }, [features.length]);
 
   const commandSequence = [
     '📝 Step 1: Registration: Teams register to officially enter the competition.',
@@ -117,7 +117,7 @@ const EpicHackathonHero = () => {
       clearTimeout(terminalInterval);
       if (pauseTimeout) clearTimeout(pauseTimeout);
     };
-  }, []);
+  }, [commandSequence]);
 
   useEffect(() => {
     if (!containerRef.current || !canvasRef.current) return;
@@ -860,7 +860,7 @@ const EpicHackathonHero = () => {
                   <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '200ms'}}>a</span>{' '}
                   <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '300ms'}}>24-hour</span>{' '}
                   <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '400ms'}}>hackathon</span>{' '}
-                  by GeeksforGeeks SRMIST Delhi-NCR that unites bright innovators, developers and creators. From ideation to execution, it offers hands-on experience, mentorship and collaboration in a high-energy environment. It's where bold ideas become real solutions, a launchpad for creativity, learning and innovation.
+                  by GeeksforGeeks SRMIST Delhi-NCR that unites bright innovators, developers and creators. From ideation to execution, it offers hands-on experience, mentorship and collaboration in a high-energy environment. It&apos;s where bold ideas become real solutions, a launchpad for creativity, learning and innovation.
                 </p>
               </div>
             </div>

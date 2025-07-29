@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
 import MentorCard from "./mentorCard";
 import FaqSection from "./FaqSection";
@@ -199,11 +200,13 @@ const SponsorsSection = () => {
           rel="noreferrer noopener"
           className="w-full h-full flex items-center justify-center"
         >
-          <img
+          <Image
             src={sponsor.logo}
             alt={sponsor.name}
             className="max-w-full max-h-full object-contain filter group-hover:brightness-110 transition-all duration-300"
             loading="lazy"
+            width={200}
+            height={80}
           />
           {sponsor.hasText && (
             <span className="ml-3 text-gray-800 font-bold text-lg">
@@ -267,7 +270,7 @@ const SponsorsSection = () => {
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"> Sponsors</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're grateful to our incredible sponsors who make this event possible and help us create an amazing experience for all participants
+            We&apos;re grateful to our incredible sponsors who make this event possible and help us create an amazing experience for all participants
           </p>
           <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto mt-6 rounded-full"></div>
         </div>
@@ -337,7 +340,7 @@ export function Component() {
         <section className="py-12 md:py-16 xl:py-24  bg-black overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-wrap max-[1300px]:justify-center justify-evenly xl:gap-10">
             <div className="max-[450px]:w-11/12 flex justify-center items-center space-y-4">
-              <img src="/rotate.webp" alt="rotate" className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-60 animate-[spin_10s_linear_infinite]" loading="lazy" />
+              <Image src="/rotate.webp" alt="rotate" className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-60 animate-[spin_10s_linear_infinite]" loading="lazy" width={400} height={400} />
               <div className="max-[450px]:w-11/12 max-[450px]:text-center absolute">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                   Choose your Theme
@@ -353,13 +356,13 @@ export function Component() {
 
               {/* </div> */}
               <div className="flex flex-col justify-center items-center gap-1">
-                <img
+                <Image
                   alt="AI/ML"
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  height="300"
+                  height={300}
                   src="/theme/ai.webp"
                   loading="lazy"
-                  width="300"
+                  width={300}
                 />
                 <div className="flex-1 grid gap-1.5 mt-2">
                   <h3 className="font-semibold">Artificial Intelligence</h3>
@@ -369,13 +372,13 @@ export function Component() {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
-                <img
+                <Image
                   alt="Web Development"
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  height="300"
+                  height={300}
                   src="/theme/web.webp"
                   loading="lazy"
-                  width="300"
+                  width={300}
                 />
                 <div className="flex-1 grid gap-1.5 mt-2">
                   <h3 className="font-semibold">Web Development</h3>
@@ -385,13 +388,13 @@ export function Component() {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
-                <img
+                <Image
                   alt="App Development"
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  height="300"
+                  height={300}
                   src="/theme/app.webp"
                   loading="lazy"
-                  width="300"
+                  width={300}
                 />
                 <div className="flex-1 grid gap-1.5 mt-2">
                   <h3 className="font-semibold">App Development</h3>
@@ -401,13 +404,13 @@ export function Component() {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
-                <img
+                <Image
                   alt="Blockchain"
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  height="300"
+                  height={300}
                   src="/theme/blockchain.webp"
                   loading="lazy"
-                  width="300"
+                  width={300}
                 />
                 <div className="flex-1 grid gap-1.5 mt-2">
                   <h3 className="font-semibold">Blockchain</h3>
@@ -417,13 +420,13 @@ export function Component() {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
-                <img
+                <Image
                   alt="Network Security"
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  height="300"
+                  height={300}
                   src="/theme/ns.webp"
                   loading="lazy"
-                  width="300"
+                  width={300}
                 />
                 <div className="flex-1 grid gap-1.5 mt-2">
                   <h3 className="font-semibold">Network Security</h3>
@@ -433,13 +436,13 @@ export function Component() {
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-1">
-                <img
+                <Image
                   alt="Augumented Reality"
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  height="300"
+                  height={300}
                   src="/theme/ar.webp"
                   loading="lazy"
-                  width="300"
+                  width={300}
                 />
                 <div className="flex-1 grid gap-1.5 mt-2">
                   <h3 className="font-semibold">
@@ -455,7 +458,7 @@ export function Component() {
         </section>
         <section id="Prizes" className="py-12 md:py-16 xl:py-24 bg-black overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col flex-wrap max-[1300px]:justify-center items-center justify-evenly xl:gap-10">
-            <img src="/prize_rotate.webp" alt="rotate" className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-20 animate-[spin_100s_linear_infinite]" loading="lazy" />
+                          <Image src="/prize_rotate.webp" alt="rotate" className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-20 animate-[spin_100s_linear_infinite]" loading="lazy" width={600} height={600} />
             <div className="max-[450px]:w-11/12 flex text-center justify-center items-center space-y-4 z-10">
               <div className="max-[450px]:w-11/12">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
@@ -471,7 +474,7 @@ export function Component() {
               <p className="text-3xl font-bold col-span-2">Cash Prizes</p>
               <div className="flex flex-col gap-4 flex-wrap items-center justify-center">
                 <div className="flex gap-4 flex-col items-center justify-center">
-                  <img src="/podium.webp" alt="Prizes" className="max-[450px]:w-11/12 w-1/2" loading="lazy" />
+                  <Image src="/podium.webp" alt="Prizes" className="max-[450px]:w-11/12 w-1/2" loading="lazy" width={500} height={300} />
                   {/* <ul className="text-3xl gap-2 display flex flex-col list-none"> */}
                   {/* <p className="text-3xl">Cash Prizes worth 50K!</p> */}
                   {/* <p className="text-xl">and</p> */}
@@ -774,7 +777,7 @@ export function Component() {
 
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                 Have questions about the hackathon? Reach out to our team and
-                <span className="text-blue-400 font-semibold"> we'll be happy to help</span>
+                <span className="text-blue-400 font-semibold"> we&apos;ll be happy to help</span>
               </p>
             </div>
 

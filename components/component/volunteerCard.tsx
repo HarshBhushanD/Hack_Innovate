@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VolunteerCard() {
   const volunteerList = volunteer.map((volunteer, index) => {
@@ -12,7 +13,7 @@ export default function VolunteerCard() {
         <div className="wrapper">
           <div className="box-area">
             <div className="box">
-              <img src={volunteer.image} alt={volunteer.name} />
+              <Image src={volunteer.image} alt={volunteer.name} width={300} height={300} />
               <div className="overlay">
                 <h3>{volunteer.name}</h3>
                 <div style={{ display: "flex", justifyContent: "center" }}>

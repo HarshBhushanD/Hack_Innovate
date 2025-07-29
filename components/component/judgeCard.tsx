@@ -3,6 +3,7 @@ import { judges } from "../../lib/judges";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function JudgeCard() {
   const judgesList = judges.map((judge, index) => {
@@ -17,20 +18,24 @@ export default function JudgeCard() {
         {/* Header section with image */}
         <div className="relative h-48 bg-gradient-to-br from-purple-500/20 to-blue-500/20">
           <div className="absolute inset-0 bg-black/40"></div>
-          <img 
+          <Image 
             src={judge.image} 
             alt={judge.name} 
             loading="lazy"
             className="w-full h-full object-cover"
+            width={400}
+            height={200}
           />
           
           {/* Floating profile image */}
           <div className="absolute -bottom-12 left-6">
             <div className="w-24 h-24 rounded-full border-4 border-black bg-gradient-to-r from-purple-500 to-blue-500 p-1 group-hover:scale-110 transition-transform duration-300">
-              <img 
+              <Image 
                 src={judge.image} 
                 alt={judge.name}
                 className="w-full h-full rounded-full object-cover"
+                width={96}
+                height={96}
               />
             </div>
           </div>

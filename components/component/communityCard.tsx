@@ -1,6 +1,7 @@
 import { communities } from "../../lib/communities";
 import ReactDOM from "react-dom";
 import Link from "next/link";
+import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -12,7 +13,7 @@ export default function CommunityCard() {
                 {/* <div className=""> */}
                 <div className="flex flex-col gap-4">
                     <div className="w-[250px] h-[250px] border rounded-lg flex justify-center bg-white/75">
-                        <img src={item.image} alt={item.name} className="object-contain" />
+                        <Image src={item.image} alt={item.name} className="object-contain" width={250} height={250} />
                         {/* <div className="overlay"> */}
                         {/* <h3>{item.name}</h3> */}
                         {/* <div style={{ display: "flex", justifyContent: "center" }}>

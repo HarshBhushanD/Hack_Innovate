@@ -3,6 +3,7 @@ import { mentors } from "../../lib/mentors";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter, FaStar, FaGraduationCap, FaUsers } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MentorCard() {
   const mentorList = mentors.map((mentor, index) => {
@@ -26,10 +27,12 @@ export default function MentorCard() {
               <div className="flex items-center space-x-4">
                 <div className="relative">
                   <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-emerald-400 group-hover:border-emerald-300 transition-colors duration-300">
-                    <img 
+                    <Image 
                       src={mentor.image} 
                       alt={mentor.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      width={64}
+                      height={64}
                     />
                   </div>
                 </div>
