@@ -1070,91 +1070,53 @@ const EpicHackathonHero = () => {
         </div>
         
         {/* Countdown Section */}
-        <div className={`mt-24 text-center transition-all duration-2000 delay-2100 ${
-          textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          <div className="mb-8">
-            <h3 
-              className="text-2xl md:text-3xl font-bold mb-4"
-              style={{
-                color: '#ff9800', // orange
-                fontFamily: 'system-ui, -apple-system, sans-serif',
-                letterSpacing: '0.1em',
-                textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'
-              }}
-            >
-              REALITY BREACH IN
-            </h3>
-            {timeLeft.completed ? (
-              <div className="text-lg font-semibold" style={{ color: '#ff9800' }}>You are good to go!</div>
-            ) : (
-              <div className="flex justify-center space-x-8 text-4xl md:text-5xl font-black text-white">
-                <div className="flex flex-col items-center">
-                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 border border-gray-700 shadow-2xl min-w-[80px]">
-                    <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.days).padStart(2, '0')}</span>
-                  </div>
-                  <span className="text-sm text-gray-400 mt-2 uppercase tracking-wider">Days</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 border border-gray-700 shadow-2xl min-w-[80px]">
-                    <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.hours).padStart(2, '0')}</span>
-                  </div>
-                  <span className="text-sm text-gray-400 mt-2 uppercase tracking-wider">Hrs</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 border border-gray-700 shadow-2xl min-w-[80px]">
-                    <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.minutes).padStart(2, '0')}</span>
-                  </div>
-                  <span className="text-sm text-gray-400 mt-2 uppercase tracking-wider">Min</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 border border-gray-700 shadow-2xl min-w-[80px]">
-                    <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.seconds).padStart(2, '0')}</span>
-                  </div>
-                  <span className="text-sm text-gray-400 mt-2 uppercase tracking-wider">Sec</span>
-                </div>
-              </div>
-            )}
+<div className={`mt-24 text-center transition-all duration-2000 delay-2100 ${
+  textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+}`}>
+  <div className="mb-8">
+    <h3
+     className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 px-4"
+      style={{
+        color: '#ff9800', // orange
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        letterSpacing: '0.1em',
+        textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'
+      }}
+    >
+      REALITY BREACH IN
+    </h3>
+    {timeLeft.completed ? (
+      <div className="text-lg font-semibold px-4" style={{ color: '#ff9800' }}>You are good to go!</div>
+    ) : (
+      <div className="flex justify-center space-x-2 sm:space-x-4 md:space-x-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white px-4">
+        <div className="flex flex-col items-center">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-2 sm:p-3 md:p-4 border border-gray-700 shadow-2xl min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.days).padStart(2, '0')}</span>
           </div>
+          <span className="text-xs sm:text-sm text-gray-400 mt-2 uppercase tracking-wider">Days</span>
         </div>
-        
-        {/* Final CTA */}
-        <div className={`mt-16 transition-all duration-2000 delay-2400 ${
-          textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          <p 
-            className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto"
-            style={{
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              letterSpacing: '0.02em'
-            }}
-          >
-             Are you ready to <span className="text-emerald-400 font-semibold">transcend</span> the ordinary?
-          </p>
-          
-          <div className="flex justify-center">
-            <a
-              href="https://www.instagram.com/gfg_srmist_ncr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              <button
-                className="group relative px-8 py-3 text-sm font-semibold rounded-xl transition-all duration-300 hover:scale-105 border border-gray-600 text-gray-400 hover:text-white hover:border-emerald-400 overflow-hidden"
-                style={{
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  background: 'rgba(0, 0, 0, 0.3)',
-                  backdropFilter: 'blur(10px)'
-                }}
-              >
-                <span className="relative z-10">Enter the Matrix</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </button>
-            </a>
+        <div className="flex flex-col items-center">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-2 sm:p-3 md:p-4 border border-gray-700 shadow-2xl min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.hours).padStart(2, '0')}</span>
           </div>
+          <span className="text-xs sm:text-sm text-gray-400 mt-2 uppercase tracking-wider">Hrs</span>
         </div>
+        <div className="flex flex-col items-center">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-2 sm:p-3 md:p-4 border border-gray-700 shadow-2xl min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.minutes).padStart(2, '0')}</span>
+          </div>
+          <span className="text-xs sm:text-sm text-gray-400 mt-2 uppercase tracking-wider">Min</span>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-2 sm:p-3 md:p-4 border border-gray-700 shadow-2xl min-w-[60px] sm:min-w-[70px] md:min-w-[80px]">
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(255, 152, 0, 0.5)'}}>{String(timeLeft.seconds).padStart(2, '0')}</span>
+          </div>
+          <span className="text-xs sm:text-sm text-gray-400 mt-2 uppercase tracking-wider">Sec</span>
+        </div>
+      </div>
+    )}
+  </div>
+</div>
       </div>
       
       {/* Enhanced Styles */}
