@@ -1921,7 +1921,7 @@ const EpicHackathonHero = () => {
                 lineHeight: '0.9'
               }}
             >
-              Hack-Innovate-2.0
+              VULNVANGUARD
             </h1>
             
             <div 
