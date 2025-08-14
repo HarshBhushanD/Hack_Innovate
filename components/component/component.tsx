@@ -488,12 +488,12 @@ export function Component() {
               <p className="text-3xl font-bold col-span-2">In Kind Prizes</p>
               <div className="flex flex-col gap-4 flex-wrap items-center justify-center">
                 <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-bl-[25%] rounded-tr-[25%] h-[150px]">
-                  <img
+                  <Image
                     alt="GeeksforGeeks"
                     className="overflow-hidden rounded-lg object-contain object-center"
                     src="/sponsors/gfg.png"
-                    loading="lazy"
-                    width="250"
+                    width={250}
+                    height={100}
                   />
                   <div className="flex flex-col gap-1.5 mt-2 text-black">
                     <h3 className="font-semibold">GeeksforGeeks</h3>
@@ -521,12 +521,12 @@ export function Component() {
               <p className="text-3xl font-bold col-span-2">Track Prizes</p>
               <div className="flex gap-4 flex-wrap items-center justify-center">
                 <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-br-[25%] rounded-tl-[25%]  h-[150px]">
-                  <img
+                  <Image
                     alt="Polygon"
                     className="overflow-hidden rounded-lg object-contain object-center"
-                    loading="lazy"
                     src="https://assets.devfolio.co/hackathons/28bbd4f275b046f5b35698b9727eb71e/sponsors/5c7d24df013b4aa7911141b599ed0d23/348.png"
-                    width="250"
+                    width={250}
+                    height={100}
                   />
                   <div className="flex-1 grid gap-1.5 mt-2 text-black">
                     <h3 className="font-semibold">Polygon</h3>
@@ -536,12 +536,12 @@ export function Component() {
                   </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-bl-[25%] rounded-tr-[25%]  h-[150px]">
-                  <img
+                  <Image
                     src="https://assets.devfolio.co/content/c7839676bfcc4363b7a42fcacb52eaf3/70095ac7-8485-49ab-9117-342196b48c67.png"
                     className="overflow-hidden rounded-lg object-contain object-center"
-                    loading="lazy"
                     alt="ETHIndia"
-                    width="250"
+                    width={250}
+                    height={100}
                   />
                   <div className="flex-1 grid gap-1.5 mt-2 text-black">
                     <h3 className="font-semibold">ETHIndia</h3>
@@ -551,12 +551,12 @@ export function Component() {
                   </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-tl-[25%] rounded-br-[25%]  h-[150px]">
-                  <img
+                  <Image
                     src="/sponsors/aptos.webp"
                     className="overflow-hidden rounded-lg object-contain object-center"
-                    loading="lazy"
                     alt="Aptos"
-                    width="250"
+                    width={250}
+                    height={100}
                   />
                   <div className="flex-1 grid gap-1.5 mt-2 text-black">
                     <h3 className="font-semibold">Aptos</h3>
@@ -566,12 +566,12 @@ export function Component() {
                   </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-1 bg-white/70 p-4 rounded-tr-[25%] rounded-bl-[25%]  h-[150px]">
-                  <img
+                  <Image
                     src="/sponsors/quillaudits.webp"
                     className="overflow-hidden rounded-lg object-contain object-center"
-                    loading="lazy"
-                    alt="Aptos"
-                    width="250"
+                    alt="Quill Audits"
+                    width={250}
+                    height={100}
                   />
                   <div className="flex-1 grid gap-1.5 mt-2 text-black">
                     <h3 className="font-semibold">Quill Audits</h3>
@@ -777,7 +777,7 @@ export function Component() {
 
       <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
         Questions about the cybersecurity hackathon? Reach out to our organizers and
-        <span className="text-red-400 font-semibold"> we'll be happy to help</span>
+        <span className="text-red-400 font-semibold"> we&apos;ll be happy to help</span>
       </p>
     </div>
 
