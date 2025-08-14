@@ -1473,7 +1473,7 @@ const EpicHackathonHero = () => {
       if (nextCommandTimeout) clearTimeout(nextCommandTimeout);
       if (startTimeout) clearTimeout(startTimeout);
     };
-  }, []);
+  }, [commandSequence]);
 
   useEffect(() => {
     if (!containerRef.current || !canvasRef.current) return;
