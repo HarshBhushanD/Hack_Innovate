@@ -7,10 +7,5 @@
         "NPM_CONFIG_ARCH": "x64",
         "NPM_CONFIG_OPTIONAL": "false"
       }
-    },
-    "functions": {
-      "app/api/**/*.js": {
-        "runtime": "@vercel/node@3"
-      }
     }
   }
