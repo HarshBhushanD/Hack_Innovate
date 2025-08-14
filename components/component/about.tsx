@@ -2123,4 +2123,4 @@ const EpicHackathonAbout = () => {
 };
 
 export default EpicHackathonAbout;
-export const AboutPage = EpicHackathonAbout;;
+export const AboutPage = EpicHackathonAbout;;;

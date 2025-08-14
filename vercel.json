@@ -1,0 +1,16 @@
+{
+    "buildCommand": "npm install --no-optional && npm run build",
+    "installCommand": "npm install --no-optional --force",
+    "build": {
+      "env": {
+        "NPM_CONFIG_PLATFORM": "linux",
+        "NPM_CONFIG_ARCH": "x64",
+        "NPM_CONFIG_OPTIONAL": "false"
+      }
+    },
+    "functions": {
+      "app/api/**/*.js": {
+        "runtime": "nodejs18.x"
+      }
+    }
+  }
