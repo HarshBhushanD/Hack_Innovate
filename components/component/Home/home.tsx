@@ -1406,7 +1406,7 @@ const EpicHackathonHero = () => {
     '📋 Step 4: Round 3 – Documentation & Technical Explanation: Teams create comprehensive bug reports, document their fixes, and prepare technical explanations.',
     '🎤 Step 5: Final Presentations & Closing: Teams present their complete work to judges, showcase their cybersecurity solutions, and winners are announced.'
   ];
-  
+
   useEffect(() => {
     let isActive = true;
     let commandIndex = 0;
@@ -1430,7 +1430,7 @@ const EpicHackathonHero = () => {
             if (isActive && callback) callback();
           }, 200);
         }
-      }, 15); // Much faster typing speed
+      }, 15); // Fast typing speed
     };
 
     const processNextCommand = () => {
@@ -1473,7 +1473,7 @@ const EpicHackathonHero = () => {
       if (nextCommandTimeout) clearTimeout(nextCommandTimeout);
       if (startTimeout) clearTimeout(startTimeout);
     };
-  }, [commandSequence]);
+  }, []); // Empty dependency array
 
   useEffect(() => {
     if (!containerRef.current || !canvasRef.current) return;
@@ -1965,84 +1965,91 @@ const EpicHackathonHero = () => {
 </div>
 
         {/* Terminal Window */}
+        {/* Terminal Window */}
+      <div 
+        className="mb-10 h-64 sm:mb-10 w-full max-w-3xl mx-auto rounded-xl sm:rounded-2xl overflow-hidden"
+        style={{
+          background: 'rgba(0, 0, 0, 0.6)',
+          backdropFilter: 'blur(30px)',
+          border: '1px solid rgba(0, 255, 170, 0.4)',
+          boxShadow: '0 20px 60px rgba(0, 255, 170, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+        }}
+      >
         <div 
-          className="mb-10 h-64 sm:mb-10 w-full max-w-3xl mx-auto rounded-xl sm:rounded-2xl overflow-hidden"
+          className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3"
           style={{
-            background: 'rgba(0, 0, 0, 0.6)',
-            backdropFilter: 'blur(30px)',
-            border: '1px solid rgba(0, 255, 170, 0.4)',
-            boxShadow: '0 20px 60px rgba(0, 255, 170, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+            background: 'rgba(0, 0, 0, 0.4)',
+            borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
           }}
         >
-          <div 
-            className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3"
-            style={{ 
-              background: 'rgba(0, 0, 0, 0.4)',
-              borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
-            }}
-          >
-            <div className="flex space-x-2">
-              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-red-500 rounded-full shadow-lg shadow-red-500/30 animate-pulse"></div>
-              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-yellow-500 rounded-full shadow-lg shadow-yellow-500/30 animate-pulse" style={{animationDelay: '0.5s'}}></div>
-              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-green-500 rounded-full shadow-lg shadow-green-500/30 animate-pulse" style={{animationDelay: '1s'}}></div>
-            </div>
+          <div className="flex space-x-2">
+            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-red-500 rounded-full shadow-lg shadow-red-500/30 animate-pulse"></div>
             <div 
-              className="text-xs font-mono opacity-80"
-              style={{ 
-                color: '#00ffaa',
-                textShadow: '0 0 10px rgba(0, 255, 170, 0.5)'
-              }}
-            >
-              hackathon@terminal:~$
-            </div>
+              className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-yellow-500 rounded-full shadow-lg shadow-yellow-500/30 animate-pulse" 
+              style={{animationDelay: '0.5s'}}
+            ></div>
+            <div 
+              className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-green-500 rounded-full shadow-lg shadow-green-500/30 animate-pulse" 
+              style={{animationDelay: '1s'}}
+            ></div>
           </div>
-          
-          <div 
-            className="p-3 sm:p-4 h-44 sm:h-56 overflow-y-auto terminal-content"
-            style={{ 
-              fontFamily: 'SF Mono, Monaco, Consolas, "Liberation Mono", Menlo, monospace', 
-              fontSize: '12px',
-              lineHeight: '1.6',
-              scrollbarWidth: 'thin',
-              scrollbarColor: 'rgba(0, 255, 170, 0.3) transparent'
+          <div
+            className="text-xs font-mono opacity-80"
+            style={{
+              color: '#00ffaa',
+              textShadow: '0 0 10px rgba(0, 255, 170, 0.5)'
             }}
           >
-            {terminalLines.map((line, index) => (
-              <div 
-                key={index} 
-                className="mb-2 opacity-80 text-xs leading-relaxed animate-fade-in"
-                style={{
-                  color: '#00ffaa',
-                  textShadow: '0 0 8px rgba(0, 255, 170, 0.4)',
-                  animationDelay: `${index * 0.05}s`
-                }}
-              >
-                {line}
-              </div>
-            ))}
-            
-            <div 
-              className="flex items-start text-xs leading-relaxed"
-              style={{
-                color: '#00ffaa',
-                textShadow: '0 0 8px rgba(0, 255, 170, 0.4)'
-              }}
-            >
-              <span className="mr-2 opacity-70 flex-shrink-0">{'>'}</span>
-              <span className="flex-1">{currentCommand}</span>
-              {currentCommand && (
-                <span 
-                  className="w-2 h-4 ml-1 flex-shrink-0 animate-pulse"
-                  style={{ 
-                    display: 'inline-block',
-                    background: '#00ffaa',
-                    boxShadow: '0 0 10px rgba(0, 255, 170, 0.8)',
-                  }}
-                />
-              )}
-            </div>
+            hackathon@terminal:~$
           </div>
         </div>
+        
+        <div 
+          className="p-3 sm:p-4 h-44 sm:h-56 overflow-y-auto"
+          style={{
+            fontFamily: 'SF Mono, Monaco, Consolas, "Liberation Mono", Menlo, monospace',
+            fontSize: '12px',
+            lineHeight: '1.6',
+            scrollbarWidth: 'thin',
+            scrollbarColor: 'rgba(0, 255, 170, 0.3) transparent'
+          }}
+        >
+          {terminalLines.map((line, index) => (
+            <div 
+              key={index}
+              className="mb-2 opacity-80 text-xs leading-relaxed"
+              style={{
+                color: '#00ffaa',
+                textShadow: '0 0 8px rgba(0, 255, 170, 0.4)',
+                animation: `fadeIn 0.5s ease-in ${index * 0.05}s both`
+              }}
+            >
+              {line}
+            </div>
+          ))}
+          
+          <div
+            className="flex items-start text-xs leading-relaxed"
+            style={{
+              color: '#00ffaa',
+              textShadow: '0 0 8px rgba(0, 255, 170, 0.4)'
+            }}
+          >
+            <span className="mr-2 opacity-70 flex-shrink-0">{'>'}</span>
+            <span className="flex-1">{currentCommand}</span>
+            {currentCommand && (
+              <span
+                className="w-2 h-4 ml-1 flex-shrink-0 animate-pulse"
+                style={{
+                  display: 'inline-block',
+                  background: '#00ffaa',
+                  boxShadow: '0 0 10px rgba(0, 255, 170, 0.8)',
+                }}
+              />
+            )}
+          </div>
+        </div>
+      </div>
         
         {/* CTA Section */}
         <div className={`flex flex-col mt-4 sm:flex-row gap-4 sm:gap-6 mb-12 sm:mb-16 transition-all duration-2000 delay-900 ${
