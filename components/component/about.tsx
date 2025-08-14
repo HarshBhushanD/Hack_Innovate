@@ -1185,7 +1185,7 @@ const EpicHackathonAbout = () => {
       clearTimeout(typeTimeout);
       clearTimeout(nextCommandTimeout);
     };
-  }, []);
+  }, [terminalCommands, terminalLines.length]);
 
   useEffect(() => {
     if (!containerRef.current || !canvasRef.current) return;
