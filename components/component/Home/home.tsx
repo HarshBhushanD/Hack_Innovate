@@ -1400,13 +1400,13 @@ const EpicHackathonHero = () => {
   }, [features.length]);
 
   const commandSequence = [
-    '📝 Step 1: Registration: Teams register to officially enter the competition.',
-    '🧠 Step 2: Quiz Round: A screening quiz to evaluate technical and problem-solving skills.',
-    '💡 Step 3: Round 1 – Project Development: Shortlisted teams Opt a problem statement and build a project.',
-    '🔧 Step 4: Round 2 – Feature Enhancement: Selected teams improve their project by adding new features or refining functionality.',
-    '🎤 Step 5: Final Pitch: Top teams present their final projects to a panel of judges, and winners are declared.',
+    '📝 Step 1: Registration & Technical Quiz: Teams register and complete an online preliminary quiz (30-45 minutes) to qualify for the main event.',
+    '🔍 Step 2: Round 1 – Bug Discovery & Identification: Teams solve 4 Linux-based riddles using cybersecurity skills to find hidden flags and unlock the next level.',
+    '🛠️ Step 3: Round 2 – Bug Fixing & Implementation: Teams debug and fix bugs in randomly assigned projects, improving code quality and system functionality.',
+    '📋 Step 4: Round 3 – Documentation & Technical Explanation: Teams create comprehensive bug reports, document their fixes, and prepare technical explanations.',
+    '🎤 Step 5: Final Presentations & Closing: Teams present their complete work to judges, showcase their cybersecurity solutions, and winners are announced.'
   ];
-
+  
   useEffect(() => {
     let isActive = true;
     let commandIndex = 0;
@@ -1905,64 +1905,64 @@ const EpicHackathonHero = () => {
         
         {/* Main Header */}
         <div className="mb-8 sm:mb-12">
-          <div className="mb-6">
-            <h1 
-              className={`text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-3 transition-all duration-2000 ${
-                textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`}
-              style={{
-                fontFamily: 'system-ui, -apple-system, sans-serif',
-                background: 'linear-gradient(135deg, #00ff87 0%, #0ea5e9 50%, #8b5cf6 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                textShadow: '0 0 80px rgba(0, 255, 135, 0.5)',
-                letterSpacing: '-0.02em',
-                lineHeight: '0.9'
-              }}
-            >
-              VulnVANGUARD
-            </h1>
-            
-            <div 
-              className={`text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 transition-all duration-2000 delay-300 ${
-                textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`}
-              style={{
-                fontFamily: 'system-ui, -apple-system, sans-serif',
-                letterSpacing: '0.3em',
-                textShadow: '0 0 40px rgba(255, 255, 255, 0.3)'
-              }}
-            >
-              HACKATHON
-            </div>
-          </div>
-        </div>
-        
-        {/* Epic Subtitle */}
-        <div className={`mb-8 sm:mb-10 max-w-4xl transition-all duration-2000 delay-600 ${
-          textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          <h2 
-            className="text-xl sm:text-2xl md:text-3xl font-light mb-4 sm:mb-6 text-gray-100 leading-tight"
-            style={{
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              letterSpacing: '0.02em'
-            }}
-          >
-            Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-500 font-semibold">Code</span> Meets <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 font-semibold">Consciousness</span>
-          </h2>
-          
-          <p 
-            className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
-            style={{
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              letterSpacing: '0.01em'
-            }}
-          >
- Where bold ideas become real solutions, a launchpad for creativity, learning and innovation.
-          </p>
-        </div>
+  <div className="mb-6">
+    <h1
+      className={`text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-3 transition-all duration-2000 ${
+        textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
+      style={{
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        background: 'linear-gradient(135deg, #00ff87 0%, #0ea5e9 50%, #8b5cf6 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textShadow: '0 0 80px rgba(0, 255, 135, 0.5)',
+        letterSpacing: '-0.02em',
+        lineHeight: '0.9'
+      }}
+    >
+      VulnVANGUARD
+    </h1>
+                     
+    <div
+      className={`text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 transition-all duration-2000 delay-300 ${
+        textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
+      style={{
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        letterSpacing: '0.3em',
+        textShadow: '0 0 40px rgba(255, 255, 255, 0.3)'
+      }}
+    >
+      CYBERSECURITY HACKATHON
+    </div>
+  </div>
+</div>
+
+{/* Epic Subtitle */}
+<div className={`mb-8 sm:mb-10 max-w-4xl transition-all duration-2000 delay-600 ${
+  textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+}`}>
+  <h2 
+    className="text-xl sm:text-2xl md:text-3xl font-light mb-4 sm:mb-6 text-gray-100 leading-tight"
+    style={{
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      letterSpacing: '0.02em'
+    }}
+  >
+    Where <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500 font-semibold">Security</span> Meets <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 font-semibold">Innovation</span>
+  </h2>
+                   
+  <p 
+    className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+    style={{
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      letterSpacing: '0.01em'
+    }}
+  >
+    Defend, discover, and deploy cutting-edge solutions in a 24-hour cybersecurity challenge where ethical hackers forge the future of digital defense.
+  </p>
+</div>
 
         {/* Terminal Window */}
         <div 
@@ -2078,304 +2078,203 @@ const EpicHackathonHero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-cyan-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </button>
           
-          <button
-            className="group relative px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg sm:rounded-xl transition-all duration-500 hover:scale-105 active:scale-95 overflow-hidden border-2 border-cyan-400 text-cyan-400 hover:text-black"
-            style={{
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              letterSpacing: '0.02em',
-              background: 'rgba(6, 182, 212, 0.1)',
-              backdropFilter: 'blur(20px)'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(6, 182, 212, 0.9)';
-              e.currentTarget.style.borderColor = '#06b6d4';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'rgba(6, 182, 212, 0.1)';
-              e.currentTarget.style.borderColor = '#06b6d4';
-            }}
-            onClick={() => router.push('/about')}
-          >
-            <span className="relative z-10">EXPLORE DEPTHS</span>
-          </button>
+            
         </div>
         
         {/* Feature Matrix Replacement: Event Details Section */}
-        <div className={`max-w-7xl mx-auto mt-10 mb-20 transition-all duration-2000 delay-1500 ${
-          textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          {/* Enhanced floating background effects */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Floating particles */}
-            {[...Array(50)].map((_, i) => (
-              <div
-                key={`particle-${i}`}
-                className="absolute rounded-full animate-bounce"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  width: `${Math.random() * 4 + 2}px`,
-                  height: `${Math.random() * 4 + 2}px`,
-                  background: i % 4 === 0 ? 'rgba(167, 139, 250, 0.3)' : 
-                             i % 4 === 1 ? 'rgba(56, 189, 248, 0.3)' :
-                             i % 4 === 2 ? 'rgba(244, 114, 182, 0.3)' : 'rgba(255, 255, 255, 0.1)',
-                  animationDelay: `${Math.random() * 5}s`,
-                  animationDuration: `${Math.random() * 4 + 3}s`,
-                  boxShadow: `0 0 ${Math.random() * 10 + 5}px currentColor`
-                }}
-              />
-            ))}
-            
-            {/* Floating geometric shapes */}
-            {[...Array(15)].map((_, i) => (
-              <div
-                key={`shape-${i}`}
-                className="absolute animate-spin opacity-20"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  width: `${Math.random() * 20 + 10}px`,
-                  height: `${Math.random() * 20 + 10}px`,
-                  background: i % 3 === 0 ? 'linear-gradient(45deg, #a78bfa, transparent)' :
-                             i % 3 === 1 ? 'linear-gradient(45deg, #38bdf8, transparent)' :
-                             'linear-gradient(45deg, #f472b6, transparent)',
-                  clipPath: i % 4 === 0 ? 'polygon(50% 0%, 0% 100%, 100% 100%)' :
-                           i % 4 === 1 ? 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' :
-                           i % 4 === 2 ? 'circle(50%)' : 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
-                  animationDelay: `${Math.random() * 10}s`,
-                  animationDuration: `${Math.random() * 20 + 15}s`
-                }}
-              />
-            ))}
-            
-            {/* Animated gradient orbs */}
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-full filter blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
-            <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-gradient-to-r from-pink-500/10 to-rose-500/10 rounded-full filter blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
-          </div>
+<div className={`max-w-7xl mx-auto mt-10 mb-20 transition-all duration-1000 ${
+  textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+}`}>
 
-          {/* Animated grid lines */}
-          <div className="absolute inset-0 pointer-events-none opacity-5">
-            <div className="w-full h-full animate-pulse" style={{
-              backgroundImage: `
-                linear-gradient(rgba(167, 139, 250, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(167, 139, 250, 0.1) 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px'
-            }}></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
-            {/* About the Event */}
-            <div className="group relative p-8 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-700 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden hover:rotate-1 animate-bounce" 
-                 style={{
-                   background:'rgba(15,23,42,0.6)', 
-                   borderColor:'#a78bfa',
-                   boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)',
-                   animationDelay: '0ms',
-                   animationDuration: '6s'
-                 }}
-                 onMouseEnter={(e) => {
-                   e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(167, 139, 250, 0.4), 0 0 40px rgba(167, 139, 250, 0.3), inset 0 1px 0 rgba(255,255,255,0.1)';
-                   e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.7))';
-                   e.currentTarget.style.borderColor = '#c4b5fd';
-                 }}
-                 onMouseLeave={(e) => {
-                   e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
-                   e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
-                   e.currentTarget.style.borderColor = '#a78bfa';
-                 }}>
-              
-              {/* Multiple animated border gradients */}
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-60 transition-opacity duration-500 bg-gradient-to-r from-purple-500/30 via-transparent to-purple-500/30 animate-spin"></div>
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-40 transition-opacity duration-700 bg-gradient-to-l from-violet-500/20 via-transparent to-violet-500/20 animate-ping"></div>
-              
-              {/* Enhanced inner glow effect */}
-              <div className="absolute inset-1 rounded-3xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-b from-purple-500/20 via-purple-400/10 to-transparent animate-pulse"></div>
-              
-              {/* Multiple corner accents */}
-              <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-50 transition-opacity duration-500 bg-gradient-to-bl from-purple-500/40 to-transparent rounded-tr-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-12 h-12 opacity-10 group-hover:opacity-30 transition-opacity duration-700 bg-gradient-to-tr from-purple-400/30 to-transparent rounded-bl-3xl"></div>
-              
-              {/* Floating micro particles inside card */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-                {[...Array(8)].map((_, i) => (
-                  <div
-                    key={`micro-${i}`}
-                    className="absolute w-1 h-1 bg-purple-400 rounded-full animate-bounce opacity-60"
-                    style={{
-                      left: `${20 + Math.random() * 60}%`,
-                      top: `${20 + Math.random() * 60}%`,
-                      animationDelay: `${i * 200}ms`,
-                      animationDuration: `${3 + Math.random() * 2}s`
-                    }}
-                  />
-                ))}
-              </div>
-              
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-4 text-purple-300 transition-all duration-300 group-hover:scale-105 group-hover:text-purple-100 group-hover:drop-shadow-lg animate-text-glow">ABOUT THE EVENT</h3>
-                <p className="text-gray-300 text-sm mb-4 leading-relaxed group-hover:text-gray-100 transition-all duration-300 hover:tracking-wide">
-                  <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '0ms'}}>Hack-Innovate</span>{' '}
-                  <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '100ms'}}>is</span>{' '}
-                  <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '200ms'}}>a</span>{' '}
-                  <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '300ms'}}>24-hour</span>{' '}
-                  <span className="inline-block group-hover:animate-bounce" style={{animationDelay: '400ms'}}>hackathon</span>{' '}
-                  by GeeksforGeeks SRMIST Delhi-NCR that unites bright innovators, developers and creators. From ideation to execution, it offers hands-on experience, mentorship and collaboration in a high-energy environment. It&apos;s where bold ideas become real solutions, a launchpad for creativity, learning and innovation.
-                </p>
-              </div>
-            </div>
-
-            {/* Domains */}
-            <div className="group relative p-8 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-700 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden" 
-                 style={{
-                   background:'rgba(15,23,42,0.6)', 
-                   borderColor:'#a78bfa',
-                   boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
-                 }}
-                 onMouseEnter={(e) => {
-                   e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(167, 139, 250, 0.3), 0 0 30px rgba(167, 139, 250, 0.2)';
-                   e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4))';
-                 }}
-                 onMouseLeave={(e) => {
-                   e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
-                   e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
-                 }}>
-              
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 bg-gradient-to-r from-violet-500/20 via-transparent to-violet-500/20 animate-pulse"></div>
-              <div className="absolute inset-1 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-b from-violet-500/10 to-transparent"></div>
-              <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-violet-500/30 to-transparent rounded-tr-3xl"></div>
-              
-              <div className="relative z-10">
-                <h4 className="text-lg font-semibold text-purple-200 mb-4 transition-all duration-300 group-hover:scale-105 group-hover:text-purple-100">DOMAINS</h4>
-                <ul className="text-gray-200 text-sm space-y-2">
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-1 hover:scale-105 relative" onMouseEnter={(e) => e.currentTarget.style.transform = 'translateX(8px) scale(1.05)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'translateX(4px)'}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300 group-hover:animate-pulse animate-ping-slow"></div>
-                    <span className="relative z-10">Web Development</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-500/5 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 rounded"></div>
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-2" style={{transitionDelay: '100ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
-                    Mobile App Development
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-3" style={{transitionDelay: '200ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
-                    AI/ML
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-4" style={{transitionDelay: '300ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
-                    Security
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-5" style={{transitionDelay: '400ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-purple-400 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300"></div>
-                    Blockchain & Web3
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Fueled Within */}
-            <div className="group relative p-8 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-700 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden" 
-                 style={{
-                   background:'rgba(15,23,42,0.6)', 
-                   borderColor:'#38bdf8',
-                   boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
-                 }}
-                 onMouseEnter={(e) => {
-                   e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(56, 189, 248, 0.3), 0 0 30px rgba(56, 189, 248, 0.2)';
-                   e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4))';
-                 }}
-                 onMouseLeave={(e) => {
-                   e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
-                   e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
-                 }}>
-              
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 bg-gradient-to-r from-cyan-500/20 via-transparent to-cyan-500/20 animate-pulse"></div>
-              <div className="absolute inset-1 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-b from-cyan-500/10 to-transparent"></div>
-              <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-cyan-500/30 to-transparent rounded-tr-3xl"></div>
-              
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-4 text-cyan-300 transition-all duration-300 group-hover:scale-105 group-hover:text-cyan-200">FUELED WITHIN</h3>
-                <ul className="text-gray-300 text-sm space-y-2">
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-1">
-                    <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"></div>
-                    Intellectual Cohesion
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-2" style={{transitionDelay: '100ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"></div>
-                    Powered by peer collaboration
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-3" style={{transitionDelay: '200ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"></div>
-                    Supported by GFG Campus Body
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-4" style={{transitionDelay: '300ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"></div>
-                    Mentorship from Industry Trained Experts
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-5" style={{transitionDelay: '400ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"></div>
-                    Driven by passion, not just prizes
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Benefits */}
-            <div className="group relative p-8 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-700 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden" 
-                 style={{
-                   background:'rgba(15,23,42,0.6)', 
-                   borderColor:'#f472b6',
-                   boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
-                 }}
-                 onMouseEnter={(e) => {
-                   e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(244, 114, 182, 0.3), 0 0 30px rgba(244, 114, 182, 0.2)';
-                   e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4))';
-                 }}
-                 onMouseLeave={(e) => {
-                   e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
-                   e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
-                 }}>
-              
-              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 bg-gradient-to-r from-pink-500/20 via-transparent to-pink-500/20 animate-pulse"></div>
-              <div className="absolute inset-1 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-b from-pink-500/10 to-transparent"></div>
-              <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-pink-500/30 to-transparent rounded-tr-3xl"></div>
-              
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-4 text-pink-300 transition-all duration-300 group-hover:scale-105 group-hover:text-pink-200">BENEFITS</h3>
-                <ul className="text-gray-300 text-sm space-y-2">
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-1">
-                    <div className="w-2 h-2 rounded-full mr-3 bg-pink-400 group-hover:shadow-lg group-hover:shadow-pink-400/50 transition-all duration-300"></div>
-                    Exposure Skill
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-2" style={{transitionDelay: '100ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-pink-400 group-hover:shadow-lg group-hover:shadow-pink-400/50 transition-all duration-300"></div>
-                    Growth
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-3" style={{transitionDelay: '200ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-pink-400 group-hover:shadow-lg group-hover:shadow-pink-400/50 transition-all duration-300"></div>
-                    Innovation
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-4" style={{transitionDelay: '300ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-pink-400 group-hover:shadow-lg group-hover:shadow-pink-400/50 transition-all duration-300"></div>
-                    Collaboration
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-5" style={{transitionDelay: '400ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-pink-400 group-hover:shadow-lg group-hover:shadow-pink-400/50 transition-all duration-300"></div>
-                    Goodies
-                  </li>
-                  <li className="flex items-center group-hover:text-gray-100 transition-all duration-300 group-hover:translate-x-6" style={{transitionDelay: '500ms'}}>
-                    <div className="w-2 h-2 rounded-full mr-3 bg-pink-400 group-hover:shadow-lg group-hover:shadow-pink-400/50 transition-all duration-300"></div>
-                    Certification
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+    {/* About the Event */}
+    <div className="group relative p-6 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden min-h-[320px] flex flex-col" 
+         style={{
+           background:'rgba(15,23,42,0.6)', 
+           borderColor:'#a78bfa',
+           boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
+         }}
+         onMouseEnter={(e) => {
+           e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(167, 139, 250, 0.4)';
+           e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.7))';
+           e.currentTarget.style.borderColor = '#c4b5fd';
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
+           e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
+           e.currentTarget.style.borderColor = '#a78bfa';
+         }}>
+      
+      {/* Simple border glow */}
+      <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-r from-purple-500/20 via-transparent to-purple-500/20"></div>
+      
+      {/* Corner accent */}
+      <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-purple-500/30 to-transparent rounded-tr-3xl"></div>
+      
+      <div className="relative z-10 flex-1 flex flex-col">
+        <h3 className="text-xl font-bold mb-4 text-purple-300 transition-colors duration-300 group-hover:text-purple-100">ABOUT THE EVENT</h3>
+        <p className="text-gray-300 text-sm mb-6 leading-relaxed group-hover:text-gray-100 transition-colors duration-300 flex-1">
+        VulnVANGUARD is a 24-hour cybersecurity hackathon by GeeksforGeeks SRMIST Delhi-NCR for ethical hackers and security enthusiasts. Participants engage in hands-on penetration testing, incident response, and security architecture to develop innovative cybersecurity solutions.
+        </p>
+        <div className="flex items-center justify-center text-xs text-purple-400 group-hover:text-purple-200 transition-colors duration-300">
+            24-Hour Challenge
         </div>
-        
+      </div>
+    </div>
+
+    {/* Challenge Domains */}
+    <div className="group relative p-6 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden min-h-[320px] flex flex-col" 
+         style={{
+           background:'rgba(15,23,42,0.6)', 
+           borderColor:'#ef4444',
+           boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
+         }}
+         onMouseEnter={(e) => {
+           e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(239, 68, 68, 0.3)';
+           e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4))';
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
+           e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
+         }}>
+      
+      <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-r from-red-500/20 via-transparent to-red-500/20"></div>
+      <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-red-500/30 to-transparent rounded-tr-3xl"></div>
+      
+      <div className="relative z-10 flex-1 flex flex-col">
+        <h4 className="text-lg font-semibold text-red-300 mb-4 transition-colors duration-300 group-hover:text-red-100">CHALLENGE DOMAINS</h4>
+        <ul className="text-gray-200 text-sm space-y-3 flex-1 mb-4">
+          <li className="flex items-center group-hover:text-gray-100 transition-all duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-red-400 transition-all duration-300"></div>
+            Linux System Security
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-all duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-red-400 transition-all duration-300"></div>
+            Vulnerability Assessment
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-all duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-red-400 transition-all duration-300"></div>
+            Penetration Testing
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-all duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-red-400 transition-all duration-300"></div>
+            Incident Response
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-all duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-red-400 transition-all duration-300"></div>
+            Digital Forensics
+          </li>
+        </ul>
+        <div className="text-xs text-red-400 group-hover:text-red-200 transition-colors duration-300 text-center font-semibold">
+          5 Core Domains
+        </div>
+      </div>
+    </div>
+
+    {/* Powered By */}
+    <div className="group relative p-6 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden min-h-[320px] flex flex-col" 
+         style={{
+           background:'rgba(15,23,42,0.6)', 
+           borderColor:'#38bdf8',
+           boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
+         }}
+         onMouseEnter={(e) => {
+           e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(56, 189, 248, 0.3)';
+           e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4))';
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
+           e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
+         }}>
+      
+      <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-r from-cyan-500/20 via-transparent to-cyan-500/20"></div>
+      <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-cyan-500/30 to-transparent rounded-tr-3xl"></div>
+      
+      <div className="relative z-10 flex-1 flex flex-col">
+        <h3 className="text-xl font-bold mb-4 text-cyan-300 transition-colors duration-300 group-hover:text-cyan-200">POWERED BY</h3>
+        <ul className="text-gray-300 text-sm space-y-3 flex-1 mb-4">
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 transition-all duration-300"></div>
+            Elite Security Mentors
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 transition-all duration-300"></div>
+            Real-World Cyber Challenges
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 transition-all duration-300"></div>
+            GeeksforGeeks SRMIST Chapter
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 transition-all duration-300"></div>
+            Industry Security Experts
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-cyan-400 transition-all duration-300"></div>
+            Ethical Hacking Community
+          </li>
+        </ul>
+        <div className="text-xs text-cyan-400 group-hover:text-cyan-200 transition-colors duration-300 text-center font-semibold">
+          Premium Support Network
+        </div>
+      </div>
+    </div>
+
+    {/* Rewards & Recognition */}
+    <div className="group relative p-6 rounded-3xl backdrop-blur-xl border border-opacity-30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer overflow-hidden min-h-[320px] flex flex-col" 
+         style={{
+           background:'rgba(15,23,42,0.6)', 
+           borderColor:'#10b981',
+           boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3)'
+         }}
+         onMouseEnter={(e) => {
+           e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(16, 185, 129, 0.3)';
+           e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.8), rgba(15,23,42,0.4))';
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.3)';
+           e.currentTarget.style.background = 'rgba(15,23,42,0.6)';
+         }}>
+      
+      <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-r from-emerald-500/20 via-transparent to-emerald-500/20"></div>
+      <div className="absolute top-0 right-0 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-bl from-emerald-500/30 to-transparent rounded-tr-3xl"></div>
+      
+      <div className="relative z-10 flex-1 flex flex-col">
+        <h3 className="text-xl font-bold mb-4 text-emerald-300 transition-colors duration-300 group-hover:text-emerald-200">REWARDS & RECOGNITION</h3>
+        <ul className="text-gray-300 text-sm space-y-3 flex-1 mb-4">
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-emerald-400 transition-all duration-300"></div>
+            Security Skills Mastery
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-emerald-400 transition-all duration-300"></div>
+            Career Advancement
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-emerald-400 transition-all duration-300"></div>
+            Networking Opportunities
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-emerald-400 transition-all duration-300"></div>
+            Industry Recognition
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-emerald-400 transition-all duration-300"></div>
+            Premium Swag & Prizes
+          </li>
+          <li className="flex items-center group-hover:text-gray-100 transition-colors duration-300">
+            <div className="w-2 h-2 rounded-full mr-3 bg-emerald-400 transition-all duration-300"></div>
+            Cybersecurity Certification
+          </li>
+        </ul>
+        <div className="text-xs text-emerald-400 group-hover:text-emerald-200 transition-colors duration-300 text-center font-semibold">
+          6 Key Benefits
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
         {/* Stats Matrix */}
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto transition-all duration-2000 delay-1800 ${
           textAnimation ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -2386,7 +2285,7 @@ const EpicHackathonHero = () => {
             { label: 'TEAMS', value: 'XX', color: '#8b5cf6', icon: '👩‍💻' }
           ].map((stat, index) => (
             <div key={index} className="group text-center relative">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 to-transparent opacity-0 " />
               
               <div 
                 className="text-3xl mb-4 opacity-80"
