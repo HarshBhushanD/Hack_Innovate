@@ -1,11 +1,12 @@
 {
-    "buildCommand": "npm install --no-optional && npm run build",
-    "installCommand": "npm install --no-optional --force",
+    "buildCommand": "rm -f package-lock.json && npm install && npm run build",
+    "installCommand": "rm -f package-lock.json && npm install --force",
     "build": {
       "env": {
         "NPM_CONFIG_PLATFORM": "linux",
         "NPM_CONFIG_ARCH": "x64",
-        "NPM_CONFIG_OPTIONAL": "false"
+        "NPM_CONFIG_OPTIONAL": "false",
+        "NPM_CONFIG_FORCE": "true"
       }
     }
   }
