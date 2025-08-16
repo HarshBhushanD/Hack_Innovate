@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Vuln-VANGUARD",
-  description: "Largest Office Hackathon at SRMIST Delhi-NCR",
+  description: "Cybersecurity and Development Hackathon at SRMIST Delhi-NCR",
   image: "/icon.png",
 };
 

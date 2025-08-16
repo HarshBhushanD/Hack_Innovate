@@ -548,22 +548,22 @@ export const Timeline = () => {
         <div className="index" id="index-4">
           <p>Day 1 - 12:00 PM</p>
           <p>Hackathon Commences - Round 1: Decoder</p>
-          <p>Teams solve 4 riddles in Linux challenges environment.</p>
+          <p>Solve riddles in Linux environment.</p>
         </div>
         <div className="index" id="index-5">
           <p>Day 1 - 03:00 PM</p>
           <p>Elimination Round</p>
-          <p>Preliminary evaluation checkpoint - underperforming teams eliminated.</p>
+          <p>Evaluation & teams eliminated</p>
         </div>
         <div className="index" id="index-6">
           <p>Day 1 - 04:30 PM</p>
           <p>Round 2: Bug Fixing & Implementation (Part 1)</p>
-          <p>Teams solve and debug bugs in randomly assigned projects.</p>
+          <p>Solve and debug bugs in projects.</p>
         </div>
         <div className="index" id="index-7">
           <p>Day 1 - 06:00 PM</p>
           <p>Round 2: Bug Fixing & Implementation (Part 2)</p>
-          <p>Continuation of fixing phase with mentor feedback checkpoints.</p>
+          <p>Continue fixing phase with mentor feedback.</p>
         </div>
         <div className="index" id="index-8">
           <p>Day 1 - 11:00 PM</p>

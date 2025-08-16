@@ -51,7 +51,7 @@ export default function Header() {
           className="text-base md:text-lg font-medium px-2 py-1 rounded-md transition-all duration-200 hover:underline underline-offset-4 hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           href="/#ProblemStatement"
         >
-          Problem Statement
+          Roadmap
         </Link>
         <a
           className="ml-0 md:ml-2 text-base md:text-lg font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 text-black shadow-md border border-emerald-200 hover:from-emerald-500 hover:to-cyan-500 hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
