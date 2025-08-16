@@ -121,7 +121,7 @@ export default function Perks() {
 
         {/* Bottom Call-to-Action */}
         <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-4 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white px-8 py-4 rounded-full font-bold text-xl shadow-2xl hover:shadow-purple-500/40 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-white/40 cursor-pointer">
+          <div className="inline-flex items-center gap-4 bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white px-8 py-4 rounded-full font-bold text-xl shadow-2xl hover:shadow-purple-500/40 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-white/40 cursor-pointer margin-bottom-10">
             <Heart className="w-8 h-8 animate-pulse" />
             <span>Join the Ultimate Experience!</span>
           </div>          

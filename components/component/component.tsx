@@ -606,7 +606,7 @@ export function Component() {
         {/* <SponsorsSection /> */}
 
         {/* // -----------------JUDGES SECTION BELOW ----------------------- */}
-        <section className="relative bg-black py-20 md:py-28 xl:py-36 overflow-hidden -mt-24">
+        <section className="relative bg-black py-20 md:py-28 xl:py-36 overflow-hidden -mt-12 ">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
             {/* Header section */}
             <div className="text-center mb-16">
