@@ -7,14 +7,14 @@
   .sticky-header {
     position: relative;
     top: 55%;
-    left: 60%;
+    left:50%;
     display: flex;
     transform: translate(-50%, -50%);
     opacity: 1;
   }
   
   .sticky-header h1 {
-    font-size: 20vw;
+    font-size: 16vw;
     font-weight: lighter;
     color: transparent;
     -webkit-text-stroke: 1px white;

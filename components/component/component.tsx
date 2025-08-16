@@ -857,7 +857,7 @@ export function Component() {
   </div>
 </section>
       </div >
-      <PopUp />
+      {/* <PopUp /> */}
     </>
   );
 }
