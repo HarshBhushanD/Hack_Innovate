@@ -1402,7 +1402,7 @@ const EpicHackathonHero = () => {
   const commandSequence = [
     '📝 Step 1: Registration & Technical Quiz: Teams register and complete an online preliminary quiz (30-45 minutes) to qualify for the main event.',
     '🔍 Step 2: Round 1 – Bug Discovery & Identification: Teams solve 4 Linux-based riddles using cybersecurity skills to find hidden flags and unlock the next level.',
-    '🛠️ Step 3: Round 2 – Bug Fixing & Implementation: Teams debug and fix bugs in randomly assigned projects, improving code quality and system functionality.',
+    '🛠️ Step 3: Round 2 – Bug Identification & Implementation: Teams debug and fix bugs in randomly assigned projects, improving code quality and system functionality.',
     '📋 Step 4: Round 3 – Documentation & Technical Explanation: Teams create comprehensive bug reports, document their fixes, and prepare technical explanations.',
     '🎤 Step 5: Final Presentations & Closing: Teams present their complete work to judges, showcase their cybersecurity solutions, and winners are announced.'
   ];
