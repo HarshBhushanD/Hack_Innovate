@@ -337,7 +337,7 @@ export function Component() {
 
       <div className="w-screen bg-gray-50/90 border-t border-b border-gray-200 dark:bg-gray-950 dark:border-gray-800 overflow-x-hidden">
 
-        <section className="py-12 md:py-16 xl:py-24  bg-black overflow-x-hidden">
+        {/* <section className="py-12 md:py-16 xl:py-24  bg-black overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-wrap max-[1300px]:justify-center justify-evenly xl:gap-10">
             <div className="max-[450px]:w-11/12 flex justify-center items-center space-y-4">
               <Image src="/rotate.webp" alt="rotate" className="!max-w-[400px] max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-60 animate-[spin_10s_linear_infinite]" loading="lazy" width={400} height={400} />
@@ -354,7 +354,7 @@ export function Component() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
 
-              {/* </div> */}
+              
               <div className="flex flex-col justify-center items-center gap-1">
                 <Image
                   alt="AI/ML"
@@ -455,7 +455,7 @@ export function Component() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section id="Prizes" className="py-12 md:py-16 xl:py-24 bg-black overflow-x-hidden">
           <div className="w-11/12 md:w-10/12 mx-auto flex flex-col flex-wrap max-[1300px]:justify-center items-center justify-evenly xl:gap-10">
                           <Image src="/prize_rotate.webp" alt="rotate" className="absolute -z-2 !max-w-8/12 max-[450px]:!max-w-[300px] max-[450px]:w-10/12 opacity-20 animate-[spin_100s_linear_infinite]" loading="lazy" width={600} height={600} />
