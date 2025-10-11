@@ -2223,7 +2223,7 @@ const EpicHackathonHero = () => {
           </li>
         </ul>
         <div className="text-xs text-cyan-400 group-hover:text-cyan-200 transition-colors duration-300 text-center font-semibold">
-          Premium Support Network
+          Premium Network Support
         </div>
       </div>
     </div>
