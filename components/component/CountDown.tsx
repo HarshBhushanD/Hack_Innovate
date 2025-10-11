@@ -30,7 +30,7 @@ export default function CountDown({ targetDate }: CountDownProps) {
     if (targetDate) {
       setInternalTargetDate(targetDate);
     } else {
-      const d = new Date("April 25, 2025 09:00:00.000").getTime();
+      const d = new Date("December 25, 2025 09:00:00.000").getTime();
       setInternalTargetDate(d);
     }
   }, [targetDate]);
